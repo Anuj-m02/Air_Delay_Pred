@@ -12,7 +12,7 @@ This project analyzes U.S. domestic flight data to identify delay patterns and b
 - **Classification**: Will a flight be delayed?
 - **Regression**: How long will the delay be?
 
-It includes preprocessing, exploratory data analysis (EDA), model training (XGBoost, LightGBM), and interpretation using SHAP. It concludes with suggestions generated using OpenAI's reasoning capabilities.
+It includes preprocessing, exploratory data analysis (EDA), model training (XGBoost, RandomForest), and interpretation using SHAP. It concludes with suggestions generated using OpenAI's reasoning capabilities.
 
 ---
 
@@ -49,7 +49,7 @@ Steps included:
 
 **Goal:** Predict whether a flight will be delayed by **15 minutes or more**.
 
-- Model used: `XGBoostClassifier`
+- Model used: `RandomForestClassifier`
 - Metrics: Accuracy, Precision, Recall, ROC-AUC
 - Feature Importance: Visualized with SHAP summary plot
 
@@ -66,7 +66,6 @@ Steps included:
 
 - Model used: `XGBoostRegressor`
 - Metrics: MAE, RMSE, R² score
-- Performance: MAE ~6.4 minutes on test data
 - SHAP used to explain continuous delay prediction
 
 ---
